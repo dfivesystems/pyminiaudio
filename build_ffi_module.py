@@ -796,7 +796,7 @@ if platform.system() == "Darwin":
 elif "ppc64" in platform.system():
     compiler_args += ["-mcpu=native"]
 else:
-    compiler_args += ["-mtune=native", "-march=native"]
+    compiler_args += []
 
 
 ffibuilder.set_source("_miniaudio", """
